@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
+import { marcellusRegular, zenOldMincho } from "@/lib/font";
+import Header from "./_components/Header";
+import Footer from "./_components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +16,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="ja"
+      suppressHydrationWarning
+      className={[marcellusRegular.className, zenOldMincho.className].join(" ")}
+    >
+      <body className="min-h-dvh">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
