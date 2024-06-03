@@ -1,23 +1,10 @@
-import CircularProgress from '@mui/material/CircularProgress';
-import Box from '@mui/material/Box';
+import { FC } from 'react';
 
-const Loading = () => {
+const Loading: FC = () => {
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-      }}
-    >
-      <CircularProgress />
-    </Box>
+    <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50">
+      <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+    </div>
   );
 };
 
