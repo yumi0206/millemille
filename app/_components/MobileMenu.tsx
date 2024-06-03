@@ -24,17 +24,22 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
               Product
             </div>
           </Link>
-          <Link href="/About" onClick={handleMobileDrawerClose}>
+          <Link href="/newslists" onClick={handleMobileDrawerClose}>
+            <div className="px-14 py-4 text-lg font-semibold text-gray-800 hover:bg-gray-100 w-full text-center">
+              News
+            </div>
+          </Link>
+          <Link href="/about" onClick={handleMobileDrawerClose}>
             <div className="px-14 py-4 text-lg font-semibold text-gray-800 hover:bg-gray-100 w-full text-center">
               About
             </div>
           </Link>
-          <Link href="/Access" onClick={handleMobileDrawerClose}>
+          <Link href="/access" onClick={handleMobileDrawerClose}>
             <div className="px-14 py-4 text-lg font-semibold text-gray-800 hover:bg-gray-100 w-full text-center">
               Access
             </div>
           </Link>
-          <Link href="/Contact" onClick={handleMobileDrawerClose}>
+          <Link href="/contact" onClick={handleMobileDrawerClose}>
             <div className="px-14 py-4 text-lg font-semibold text-gray-800 hover:bg-gray-100 w-full text-center">
               Contact
             </div>

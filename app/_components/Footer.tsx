@@ -3,7 +3,7 @@ import { ArrowUp } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 px-12 py-8 fixed bottom-0 left-0 right-0 text-sm ">
+    <footer className="bg-gray-100 px-12 py-8 left-0 right-0 text-sm sticky top-full">
       <div className="container mx-auto flex flex-col md:flex-row md:items-start pb-8">
         <div className="w-full md:w-1/3 px-4 space-y-2">
           <h3 className=" font-semibold mb-4">Patisserie mille.mille</h3>

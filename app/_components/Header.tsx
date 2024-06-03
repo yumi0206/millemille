@@ -5,10 +5,11 @@ import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   const navItems = [
-    { label: "Product", href: "/Product" },
-    { label: "About", href: "/About" },
-    { label: "Access", href: "/Access" },
-    { label: "Contact", href: "/Contact" },
+    { label: "Product", href: "/product" },
+    { label: "News", href: "/news" },
+    { label: "About", href: "/about" },
+    { label: "Access", href: "/access" },
+    { label: "Contact", href: "/contact" },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <header className="h-16 flex items-center sticky top-0 container bg-background">
+    <header className="h-16 flex items-center top-0 container bg-background">
       <div className="flex justify-between w-full">
         <Link href="/">
           <h1 className="text-2xl  tracking-wide">Patisserie mille.mille</h1>
