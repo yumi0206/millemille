@@ -25,7 +25,9 @@ const Contact = () => {
 
       <div className="">
         <div className="pt-12 pb-16">
-          <h2 className="text-2xl font-bold my-2">よくあるお問い合せ</h2>
+          <h2 className="text-2xl font-bold my-2" id="qa">
+            よくあるお問い合せ
+          </h2>
           <ContactQA />
         </div>
         <div className=" pt-12 pb-16">

@@ -53,7 +53,7 @@ const Access = () => {
           <p className="font-semibold">お車でお越しのお客様へ</p>
           <p className="text-2xl font-semibold">駐車場のご案内</p>
         </div>
-        <div className="w-full text-sm sm:text-base md:w-2/3 px-4 md:px-0">
+        <div className="w-full text-sm text-center md:text-left sm:text-base md:w-2/3 px-4 md:px-0">
           店舗周辺は、道幅の狭い住宅地です。
           <br />
           路上駐車は、近隣の方の迷惑となりますので、お断りしております。

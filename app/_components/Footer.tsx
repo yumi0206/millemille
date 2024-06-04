@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ArrowUp } from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -30,31 +31,34 @@ const Footer = () => {
             <div className="w-full space-y-2 font-semibold flex flex-col">
               <ul className="flex gap-6">
                 <li>
-                  <a href="#">Home</a>
+                  <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <a href="#">About</a>
+                  <Link href="/product">Product</Link>
                 </li>
                 <li>
-                  <a href="#">Services</a>
+                  <Link href="/news">News</Link>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <Link href="/about">About</Link>
                 </li>
                 <li>
-                  <a href="#">Blog</a>
+                  <Link href="/access">Access</Link>
+                </li>
+                <li>
+                  <Link href="/contact">Contact</Link>
                 </li>
               </ul>
 
               <ul className="flex gap-6 ">
                 <li>
-                  <a href="#">FAQ</a>
+                  <Link href="/contact/#qa">FAQ</Link>
                 </li>
                 <li>
-                  <a href="#">Terms of Service</a>
+                  <Link href="#">Terms of Service</Link>
                 </li>
                 <li>
-                  <a href="#">Privacy Policy</a>
+                  <Link href="#">Privacy Policy</Link>
                 </li>
               </ul>
             </div>
