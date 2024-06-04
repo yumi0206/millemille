@@ -2,7 +2,7 @@ import Hero from "@/app/_components/Hero";
 
 
 export const metadata = {
-  title: "Product",
+  title: "Access",
 };
 
 type Props = {
@@ -12,9 +12,9 @@ export default function RootLayout({ children }: Props) {
   return (
     <>
     <Hero
-      title="Product"
-      sub="商品紹介"
-      bgimg="/images/brooke-lark-V4MBq8kue3U-unsplash.jpg"
+      title="Contact"
+      sub="お問合せ"
+      bgimg="/images/first.jpg"
       />
 
 {children}

@@ -13,7 +13,7 @@ export default function RootLayout({ children }: Props) {
     <>
     <Hero
       title="Access"
-      sub="aaaa"
+      sub="アクセス"
       bgimg="/images/first.jpg"
       />
 

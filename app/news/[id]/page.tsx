@@ -11,30 +11,29 @@ type NewsPageProps = {
   };
 };
 
-export const revalidate = 3600
+export const revalidate = 3600;
 
 const NewsPage = async ({ params }: NewsPageProps) => {
   const news = await fetchNews(params.id);
   console.log(news);
 
-  if (!news) return <Loading/>;
+  if (!news) return <Loading />;
 
   return (
-    <div className="max-w-4xl mx-auto">
-      <img
-        src={news?.thumbnail?.url}
-        alt="thumbnail"
-        className="w-full h-80 sm:h-96 object-cover rounded-lg"
-      />
-      <div className="mt-8 mb-8">
-        <h1 className="text-2xl font-bold mb-4 text-blue-500">{news?.title}</h1>
-        <div className="flex items-center mb-4">
-          <p className="mr-4">{news?.updatedAt}</p>
-          <p>/</p>
-          <p className="ml-4">{news?.category?.name}</p>
+    <div className="container mt-12 mb-28 mx-auto">
+      <div className="max-w-4xl mx-auto px-6 sm:px-12 lg:px-12">
+        <p className="text-sm">  {new Date(news.updatedAt).toISOString().slice(0, 10).replace(/-/g, '.')}</p>
+        <h1 className="text-2xl font-bold my-4">{news?.title}</h1>
+        <div className="flex items-center mb-4 text-sm">
+          <p className="">{news?.category?.name}</p>
         </div>
-        <div className="prose max-w-none">
-          {parse(news?.content)}
+        <img
+          src={news?.thumbnail?.url}
+          alt="thumbnail"
+          className="w-full h-80 sm:h-96 object-cover rounded-lg"
+        />
+        <div className="mt-8 mb-8">
+          <div className="prose max-w-none">{parse(news?.content)}</div>
         </div>
       </div>
     </div>

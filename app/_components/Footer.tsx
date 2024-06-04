@@ -3,10 +3,10 @@ import { ArrowUp } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 px-12 py-8 left-0 right-0 text-sm sticky top-full">
+    <footer className="bg-gray-100 w-full py-8">
       <div className="container mx-auto flex flex-col md:flex-row md:items-start pb-8">
-        <div className="w-full md:w-1/3 px-4 space-y-2">
-          <h3 className=" font-semibold mb-4">Patisserie mille.mille</h3>
+        <div className="w-full text-sm sm:text-base md:w-1/3 px-4 space-y-4">
+          <h3 className="font-semibold mb-4">Patisserie mille.mille</h3>
           <p className="">
             123 Example Street
             <br />
@@ -16,18 +16,17 @@ const Footer = () => {
           <p className="">info@company.com</p>
         </div>
 
-        <div className="flex flex-col items-center md:items-start ">
-          <div className="">
-            <div className="w-full flex gap-2">
-              <h4 className="font-semibold mb-4">Follow Us</h4>
-              <a href="#">
+        <div className="w-full text-sm sm:text-base md:w-2/3 px-4 md:px-0 my-8 md:my-0">
+          <div className="flex flex-col">
+            <div className="w-full gap-2 flex items-center mb-4">
+              <h4 className="font-semibold mr-4">Follow Us</h4>
+              <a href="#" className="flex items-center">
                 <Image src="/facebook.png" alt="" width={16} height={16} />
               </a>
-              <a href="#">
+              <a href="#" className="flex items-center">
                 <Image src="/instagram.png" alt="" width={16} height={16} />
               </a>
             </div>
-
             <div className="w-full space-y-2 font-semibold flex flex-col">
               <ul className="flex gap-6">
                 <li>

@@ -13,7 +13,7 @@ export default function RootLayout({ children }: Props) {
     <>
     <Hero
       title="About"
-      sub="aaaa"
+      sub="私たちについて"
       bgimg="/images/diana-light-kKJl2xRikQM-unsplash.jpg"
       />
 

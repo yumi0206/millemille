@@ -17,9 +17,14 @@ const config = {
         "2xl": "1400px",
       },
     },
-    
     extend: {
+      borderWidth: {
+        '1': '1px',
+        '0.5': '0.5px',
+      },
       colors: {
+        'swiper-theme': "#ff0000",
+        'swiper-bullet-inactive': '#999999',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

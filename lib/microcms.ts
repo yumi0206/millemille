@@ -13,6 +13,15 @@ export const client = createClient({
   apiKey: "oxxnEfx4XBHu1RCBKZSoAyWW3VvzwqBcE8qq",
 });
 
+export async function fetchNewsArticles() {
+  const response = await client.get({
+    endpoint: 'news',
+    queries: { limit:3, orders: '-publishedAt' },
+  });
+
+  return response.contents;
+}
+
 // カテゴリーの型定義
 export type Category = {
   name: string;

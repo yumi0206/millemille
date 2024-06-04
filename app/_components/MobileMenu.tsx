@@ -17,14 +17,14 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
     <Sheet open={open} onOpenChange={handleMobileDrawerClose}>
       <SheetTrigger />
       <SheetContent side="top" className="bg-background w-full">
-        <div className="flex justify-end p-4 bg-background"></div>
+
         <nav className="flex flex-col items-center w-full text-center">
           <Link href="/Product" onClick={handleMobileDrawerClose}>
-            <div className="px-14 py-4 text-lg font-semibold text-gray-800 hover:bg-gray-100">
+            <div className="px-14 py-4 text-lg font-semibold text-gray-800 hover:bg-gray-100 w-full">
               Product
             </div>
           </Link>
-          <Link href="/newslists" onClick={handleMobileDrawerClose}>
+          <Link href="/news" onClick={handleMobileDrawerClose}>
             <div className="px-14 py-4 text-lg font-semibold text-gray-800 hover:bg-gray-100 w-full text-center">
               News
             </div>
