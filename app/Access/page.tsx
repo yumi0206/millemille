@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Bus, Car } from "lucide-react";
 import Link from "next/link";
 
-const page = () => {
+const Access = () => {
   return (
     <div
       className="container mt-12 mb-28 mx-auto flex flex-col items-center gap-4"
@@ -64,4 +64,4 @@ const page = () => {
     </div>
   );
 };
-export default page;
+export default Access;

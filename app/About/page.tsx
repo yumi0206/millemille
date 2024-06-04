@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const About = () => {
+const about = () => {
   return (
     <div className=" w-full my-8 py-16">
       <section className="mx-auto mb-16 text-base sm:leading-10 w-full sm:w-[calc(100%-10rem)] md:flex">
@@ -48,4 +48,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default about;

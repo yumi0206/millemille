@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const page = () => {
+const Product = () => {
   return (
     <div>
       <div className="w-full my-8 py-16">
@@ -69,4 +69,4 @@ const page = () => {
     </div>
   );
 };
-export default page;
+export default Product;
