@@ -1,11 +1,11 @@
-
+"use client";
 import SwiperComponent from "./_components/SwiperComponent";
 
 export default function Home() {
   return (
     <main>
       <div>
-        <SwiperComponent/>
+        <SwiperComponent />
       </div>
     </main>
   );
