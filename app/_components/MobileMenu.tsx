@@ -18,27 +18,27 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
       <SheetTrigger />
       <SheetContent side="top" className="bg-background w-full">
         <nav className="flex flex-col items-center w-full text-center">
-          <Link href="/product" onClick={handleMobileDrawerClose}>
+          <Link href="/Product" onClick={handleMobileDrawerClose}>
             <div className="px-14 py-4 text-lg font-semibold text-gray-800 hover:bg-gray-100 w-full">
               Product
             </div>
           </Link>
-          <Link href="/news" onClick={handleMobileDrawerClose}>
+          <Link href="/News" onClick={handleMobileDrawerClose}>
             <div className="px-14 py-4 text-lg font-semibold text-gray-800 hover:bg-gray-100 w-full text-center">
               News
             </div>
           </Link>
-          <Link href="/about" onClick={handleMobileDrawerClose}>
+          <Link href="/About" onClick={handleMobileDrawerClose}>
             <div className="px-14 py-4 text-lg font-semibold text-gray-800 hover:bg-gray-100 w-full text-center">
               About
             </div>
           </Link>
-          <Link href="/access" onClick={handleMobileDrawerClose}>
+          <Link href="/Access" onClick={handleMobileDrawerClose}>
             <div className="px-14 py-4 text-lg font-semibold text-gray-800 hover:bg-gray-100 w-full text-center">
               Access
             </div>
           </Link>
-          <Link href="/contact" onClick={handleMobileDrawerClose}>
+          <Link href="/Contact" onClick={handleMobileDrawerClose}>
             <div className="px-14 py-4 text-lg font-semibold text-gray-800 hover:bg-gray-100 w-full text-center">
               Contact
             </div>
