@@ -42,7 +42,7 @@ const Access = () => {
         referrerPolicy="no-referrer-when-downgrade"
         className="w-full max-w-4xl"
       />
-      <Button variant="secondary" asChild className="w-fit rounded-none mb-6">
+      <Button asChild className="w-fit px-20 mb-6">
         <Link href="https://maps.app.goo.gl/3bfJ1UxLpCoq8E7Q6">
           Googlemapで見る
         </Link>
