@@ -5,7 +5,7 @@ import MobileMenu from "./MobileMenu";
 
 const navItems = [
   { label: "Product", href: "/Product" },
-  { label: "News", href: "/News" },
+  { label: "News", href: "/news" },
   { label: "About", href: "/About" },
   { label: "Access", href: "/Access" },
   { label: "Contact", href: "/Contact" },
@@ -44,7 +44,10 @@ const Header = () => {
         <nav className="hidden md:flex">
           <ul className="flex space-x-8">
             {navItems.map((item) => (
-              <li key={item.label}>
+              <li
+                key={item.label}
+                className="hover:text-gray-400 transition-colors duration-300"
+              >
                 <Link href={item.href} aria-label={item.label}>
                   <div>{item.label}</div>
                 </Link>
@@ -54,7 +57,7 @@ const Header = () => {
         </nav>
         <div className="md:hidden">
           <button
-            className="text-gray-600 hover:text-gray-800 outline-none"
+            className="outline-none"
             onClick={toggleMenu}
             aria-expanded={isOpen}
             tabIndex={0}

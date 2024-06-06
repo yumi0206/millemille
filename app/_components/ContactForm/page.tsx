@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, FormEvent } from "react";
 
 interface FormData {
@@ -14,7 +14,9 @@ const ContactForm = () => {
     message: "",
   });
 
-  const handleChange = (e: FormEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: FormEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.currentTarget;
     setFormData((prevData) => ({
       ...prevData,
@@ -37,7 +39,7 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="name" className="block text-sm font-medium ">
           お名前
         </label>
         <input
@@ -47,11 +49,11 @@ const ContactForm = () => {
           value={formData.name}
           onChange={handleChange}
           required
-          className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+          className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-cocoa-500 focus:border-soft"
         />
       </div>
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="email" className="block text-sm font-medium ">
           メールアドレス
         </label>
         <input
@@ -61,11 +63,11 @@ const ContactForm = () => {
           value={formData.email}
           onChange={handleChange}
           required
-          className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+          className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-soft focus:border-soft"
         />
       </div>
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="message" className="block text-sm font-medium ">
           お問い合わせ内容
         </label>
         <textarea
@@ -75,12 +77,12 @@ const ContactForm = () => {
           value={formData.message}
           onChange={handleChange}
           required
-          className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+          className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-soft focus:border-soft"
         ></textarea>
       </div>
       <button
         type="submit"
-        className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+        className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-soft hover:bg-soft/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-soft"
       >
         送信
       </button>

@@ -32,7 +32,7 @@ const News = async () => {
 
   return (
     <div className="mx-auto my-16 text-base sm:leading-10 w-full sm:w-[calc(100%-10rem)] md:flex">
-      <div className="grid gap-12 md:grid-cols-2 md:w-4/5">
+      <div className="grid md:grid-cols-2 md:w-4/5">
         {news != null ? (
           news.map((news: NewsType) => {
             return (

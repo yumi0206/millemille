@@ -1,13 +1,13 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -19,19 +19,28 @@ const config = {
     },
     extend: {
       borderWidth: {
-        '1': '1px',
-        '0.5': '0.5px',
+        "1": "1px",
+        "0.5": "0.5px",
       },
+      shadow: {
+        "custom-1": "1 0 0 1px rgba(0, 0, 0, 0.06)",
+        "custom-2": "1 1 1 0.5px rgba(0, 0, 0, 0.06)",
+        "custom-3": "1 3 3 -1.5px rgba(0, 0, 0, 0.06)",
+        "custom-4": "1 6 6 -3px rgba(0, 0, 0, 0.06)",
+        "custom-5": "1 12 12 -6px rgba(0, 0, 0, 0.06)",
+        "custom-6": "1 24 24 -12px rgba(0, 0, 0, 0.06)",
+      },
+
       colors: {
-        'swiper-theme': "#ff0000",
-        'swiper-bullet-inactive': '#999999',
+        "swiper-theme": "#ff0000",
+        "swiper-bullet-inactive": "#999999",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "hsl(33, 11%, 16%)",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -58,6 +67,12 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        cocoa: {
+          DEFAULT: "hsl(var(--cocoa))",
+        },
+        soft: {
+          DEFAULT: "hsl(var(--soft))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -81,6 +96,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
