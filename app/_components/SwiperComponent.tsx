@@ -11,18 +11,19 @@ const SwiperComponent = () => {
   return (
     <div>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={0}
         pagination={{ clickable: true }}
         modules={[Autoplay, Pagination]}
         onSwiper={(swiper) => console.log(swiper)}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
+        mousewheel={{ forceToAxis: true }}
         speed={1800}
         loop={true}
         className="h-96 w-full"
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <div className="flex h-full w-full items-center justify-center">
+            <div className="flex h-full items-center justify-center">
               {" "}
               <Image
                 src={image.src}

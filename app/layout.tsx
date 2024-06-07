@@ -21,7 +21,7 @@ export default function Layout({
       suppressHydrationWarning
       className={[marcellusRegular.className, zenOldMincho.className].join(" ")}
     >
-      <body className="min-h-[100]dvh">
+      <body className="">
         <Header />
         {children}
         <Footer />

@@ -12,7 +12,14 @@ type Props = {
   children?: React.ReactNode;
 };
 
-export default function Wrapper({ title, subtitle, wrapperImg, link ,bgColor,description}: Props) {
+export default function Wrapper({
+  title,
+  subtitle,
+  wrapperImg,
+  link,
+  bgColor,
+  description,
+}: Props) {
   return (
     <section className={`py-12 ${bgColor}`}>
       <div className="flex flex-col items-center justify-center h-full">
@@ -32,8 +39,11 @@ export default function Wrapper({ title, subtitle, wrapperImg, link ,bgColor,des
         />
       </div>
 
-      <div className="flex flex-col items-center justify-center h-full mt-10">
-        <p className="text-center text-base leading-7" dangerouslySetInnerHTML={{ __html: description || ''}}></p>
+      <div className="container flex flex-col items-center justify-center h-full mt-10">
+        <p
+          className="text-center text-base leading-7"
+          dangerouslySetInnerHTML={{ __html: description || "" }}
+        ></p>
       </div>
 
       <div className="flex items-center justify-center mt-10">

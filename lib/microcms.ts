@@ -71,3 +71,20 @@ export type NewsType = {
   revisedAt: string;
   category?: Category;
 };
+
+export type ItemType = {
+  id: string;
+  title: string;
+  content: string;
+  image: {
+    url:string;
+    height: number;
+    width:number;
+  };
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+  revisedAt: string;
+  category?: Category;
+}
+
