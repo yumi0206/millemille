@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import Link from "next/link";
 
-const Aside = () => {
+const Aside: React.FC = () => {
   return (
     <aside className="w-full md:w-1/5 flex items-center px-3 md:pl-6 h-full border-l-1">
       <div className="p-4 mb-6 mt-4 w-full flex-row md:flex-col">
