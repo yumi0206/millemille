@@ -7,7 +7,7 @@ const Aside = () => {
         <h3 className="font-bold mb-2">Category</h3>
         <ul className="mt-2">
           <li>
-            <Link href="#">Technology</Li>
+            <Link href="#">Technology</Link>
           </li>
           <li>
             <Link href="#">Automotive</Link>
