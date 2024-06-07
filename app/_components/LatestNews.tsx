@@ -10,20 +10,20 @@ const News = async () => {
     <div className="container mx-auto my-12 sm:leading-10 w-full sm:w-[calc(100%-5rem)] lg:w-[calc(100%-20rem)]">
       <p className="py-2 text-xl font-semibold">News</p>
       {news != null ? (
-        news.map((news: NewsType) => {
+        news.map((newsItem: NewsType) => {
           return (
-            <Link href={`/news/${news.id}`}>
+            <Link key={newsItem.id} href={`/news/${newsItem.id}`}>
               <div
-                key={news.id}
+                key={newsItem.id}
                 className="flex items-center hover:opacity-70 text-sm"
               >
                 <p className="mr-2">
-                  {new Date(news.updatedAt)
+                  {new Date(newsItem.updatedAt)
                     .toISOString()
                     .slice(0, 10)
                     .replace(/-/g, ".")}
                 </p>
-                <p>{news.title}</p>
+                <p>{newsItem.title}</p>
               </div>
             </Link>
           );
