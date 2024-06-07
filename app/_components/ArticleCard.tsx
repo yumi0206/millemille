@@ -10,7 +10,7 @@ const ArticleCard = ({ news }: ArticleCardProps) => {
     <div className="bg-white p-4 shadow-custom-6 rounded-lg">
       <article>
         <Link href={`/news/${news.id}`} className="">
-          <div className=" relative h-60 xl:h-80 mb-4">
+          <div className="relative h-60 xl:h-80 mb-4">
             {news.thumbnail && (
               <Image
                 src={news.thumbnail.url}

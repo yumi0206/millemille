@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Aside = () => {
   return (
     <aside className="w-full md:w-1/5 flex items-center px-3 md:pl-6 h-full border-l-1">
@@ -5,16 +7,16 @@ const Aside = () => {
         <h3 className="font-bold mb-2">Category</h3>
         <ul className="mt-2">
           <li>
-            <a href="#">Technology</a>
+            <Link href="#">Technology</Li>
           </li>
           <li>
-            <a href="#">Automotive</a>
+            <Link href="#">Automotive</Link>
           </li>
           <li>
-            <a href="#">Finance</a>
+            <Link href="#">Finance</Link>
           </li>
           <li>
-            <a href="#">Sports</a>
+            <Link href="#">Sports</Link>
           </li>
         </ul>
       </div>
