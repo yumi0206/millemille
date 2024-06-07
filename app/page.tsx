@@ -56,7 +56,7 @@ export default function Home() {
           wrapperImg="/images/aliona-gumeniuk-YJ7dFJTHEjI-unsplash.jpg"
           link="/Product"
           description={`華やかな香りと上品な味わいが口いっぱいに広がる、当店自慢のフルーツタルト。
-          じっくりと焼き上げた酵母生地となめらかなクリームの絶妙な調和をお楽しみください。
+          じっくりと焼き上げた生地となめらかなクリームの絶妙な調和をお楽しみください。
           一口ごとに広がる幸せな味わいは、特別な日のデザートにぴったりです。`}
           bgColor="bg-cocoa-10"
         />

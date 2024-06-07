@@ -1,7 +1,7 @@
 import ContactForm from "../_components/ContactForm/page";
 import ContactQA from "../_components/ContactQA/page";
 
-const Contact = () => {
+const contact = () => {
   return (
     <div className="max-w-4xl container mx-auto pt-16 pb-16">
       <h1 className="text-3xl font-bold mb-4">お問い合わせ</h1>
@@ -39,4 +39,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default contact;

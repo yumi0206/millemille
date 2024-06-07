@@ -4,11 +4,11 @@ import Link from "next/link";
 import MobileMenu from "./MobileMenu";
 
 const navItems = [
-  { label: "Product", href: "/Product" },
+  { label: "Product", href: "/product" },
   { label: "News", href: "/news" },
-  { label: "About", href: "/About" },
-  { label: "Access", href: "/Access" },
-  { label: "Contact", href: "/Contact" },
+  { label: "About", href: "/about" },
+  { label: "Access", href: "/access" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const Header = () => {

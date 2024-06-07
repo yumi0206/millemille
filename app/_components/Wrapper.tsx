@@ -39,9 +39,9 @@ export default function Wrapper({
         />
       </div>
 
-      <div className="container flex flex-col items-center justify-center h-full mt-10">
+      <div className="container flex flex-col items-center justify-center h-full mt-10 max-w-2xl">
         <p
-          className="text-center text-base leading-7"
+          className="text-center text-base leading-7 "
           dangerouslySetInnerHTML={{ __html: description || "" }}
         ></p>
       </div>
