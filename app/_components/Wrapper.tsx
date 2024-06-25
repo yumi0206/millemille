@@ -23,13 +23,13 @@ export default function Wrapper({
   return (
     <section className={`py-12 ${bgColor}`}>
       <div className="flex flex-col items-center justify-center h-full">
-        <h1 className="text-3xl font-bold text-center mb-4 ">{title}</h1>
-        <p className="flex items-center justify-center gap-5 mb-10 ">
+        <h1 className="text-3xl font-bold text-center mb-4">{title}</h1>
+        <p className="flex items-center justify-center gap-5 mb-10">
           {subtitle}
         </p>
       </div>
 
-      <div className="">
+      <div>
         <Image
           className="h-[300px] w-full object-cover"
           src={wrapperImg}

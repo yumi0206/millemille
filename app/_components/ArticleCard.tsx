@@ -31,14 +31,14 @@ const ArticleCard = ({ news }: ArticleCardProps) => {
               <p className="text-sm">/</p>
               <p className="text-sm  ml-2">{news.category?.name}</p>
             </div>
-            <h3 className="text-xl font-bold mb-2 truncate">{news.title}</h3>
+            <h3 className="text-xl font-bold mb-2">{news.title}</h3>
             <p
               className="text-sm line-clamp-3"
               dangerouslySetInnerHTML={{
                 __html:
-                  news.content.length > 40
+                  news.content.length > 0
                     ? `${news.content
-                        .substring(0, 40)
+                        .substring(0, 20)
                         .replace(/<\/?[^>]+(>|$)/g, "")}...`
                     : news.content.replace(/<\/?[^>]+(>|$)/g, ""),
               }}

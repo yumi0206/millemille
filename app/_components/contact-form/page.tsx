@@ -49,7 +49,7 @@ const ContactForm = () => {
           value={formData.name}
           onChange={handleChange}
           required
-          className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-cocoa-500 focus:border-soft"
+          className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-cocoa-500 "
         />
       </div>
       <div>
@@ -63,7 +63,7 @@ const ContactForm = () => {
           value={formData.email}
           onChange={handleChange}
           required
-          className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-soft focus:border-soft"
+          className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-soft "
         />
       </div>
       <div>
@@ -77,7 +77,7 @@ const ContactForm = () => {
           value={formData.message}
           onChange={handleChange}
           required
-          className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-soft focus:border-soft"
+          className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-soft "
         ></textarea>
       </div>
       <button

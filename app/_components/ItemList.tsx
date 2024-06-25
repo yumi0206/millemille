@@ -9,7 +9,7 @@ const ItemList = async () => {
   return (
     <div className="flex flex-col my-16">
       <div className="w-full text-base sm:leading-10">
-        <div className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid gap-4 grid-cols md:grid-cols-3 lg:grid-cols-4">
           {item != null ? (
             item.map((item: ItemType) => {
               return (

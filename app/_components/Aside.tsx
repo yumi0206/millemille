@@ -8,17 +8,15 @@ const Aside: React.FC = () => {
         <h3 className="font-bold mb-2">Category</h3>
         <ul className="mt-2">
           <li>
-            <Link href="#">Technology</Link>
+            <Link href="#">お知らせ</Link>
           </li>
           <li>
-            <Link href="#">Automotive</Link>
+            <Link href="#">新商品</Link>
           </li>
           <li>
-            <Link href="#">Finance</Link>
+            <Link href="#">イベント</Link>
           </li>
-          <li>
-            <Link href="#">Sports</Link>
-          </li>
+      
         </ul>
       </div>
     </aside>

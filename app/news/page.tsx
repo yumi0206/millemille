@@ -31,12 +31,12 @@ const News = async () => {
   const news = await fetchAllNews();
 
   return (
-    <div className="mx-auto my-16 text-base sm:leading-10 w-full sm:w-[calc(100%-10rem)] md:flex">
+    <div className="mx-auto my-16 text-base sm:leading-10 sm:w-[calc(100%-10rem)] md:flex">
       <div className="grid md:grid-cols-2 md:w-4/5">
         {news != null ? (
           news.map((news: NewsType) => {
             return (
-              <div key={news.id} className=" p-4 hover:opacity-70">
+              <div key={news.id} className="hover:opacity-70">
                 <ArticleCard news={news} />
               </div>
             );

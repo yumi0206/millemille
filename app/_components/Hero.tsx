@@ -14,7 +14,8 @@ export default function Hero({ title, sub, bgimg }: Props) {
         className="absolute top-0 left-0 h-full w-full object-cover z-0"
         src={bgimg}
         alt=""
-        layout="fill"
+        width={1920}
+        height={1000}
         priority
       />
       <div className="relative z-10 flex flex-col items-center justify-center h-full">

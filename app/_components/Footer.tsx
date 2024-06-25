@@ -17,7 +17,7 @@ const Footer = () => {
           <p className="">info@company.com</p>
         </div>
 
-        <div className="w-full text-sm sm:text-base md:w-2/3 md:px-0 md:my-0">
+        <div className="w-full text-sm sm:text-base md:w-2/3 md:px-0md:my-0">
           <div className="flex flex-col">
             <div className="w-full gap-2 flex items-center mb-4">
               <h4 className="font-semibold mr-4">Follow Us</h4>
