@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Aside: React.FC = () => {
   return (
-    <aside className="w-full md:w-1/5 flex items-center px-3 md:pl-6 h-full border-l-1">
-      <div className="p-4 mb-6 mt-4 w-full flex-row md:flex-col">
+    <aside className="w-full md:w-1/5 order-2 md:order-none mt-8 md:mt-0 md:pl-6">
+      <div className="p-4 w-full">
         <h3 className="font-bold mb-2">Category</h3>
         <ul className="mt-2">
           <li>
@@ -16,7 +16,6 @@ const Aside: React.FC = () => {
           <li>
             <Link href="#">イベント</Link>
           </li>
-      
         </ul>
       </div>
     </aside>

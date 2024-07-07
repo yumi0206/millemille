@@ -31,19 +31,19 @@ const News = async () => {
   const news = await fetchAllNews();
 
   return (
-    <div className="mx-auto my-16 text-base sm:leading-10 sm:w-[calc(100%-10rem)] md:flex">
-      <div className="grid md:grid-cols-2 md:w-4/5">
-        {news != null ? (
-          news.map((news: NewsType) => {
-            return (
+    <div className="mx-auto max-w-[1000px] 2xl:max-w-[1200px] my-16 text-base md:leading-10 md:w-[calc(100%-10rem)] flex flex-col md:flex-row">
+      <div className="md:w-4/5 order-1 md:order-2">
+        <div className="grid gap-4 md:grid-cols-[repeat(auto-fit,minmax(350px,1fr))]">
+          {news != null ? (
+            news.map((news: NewsType) => (
               <div key={news.id} className="hover:opacity-70">
                 <ArticleCard news={news} />
               </div>
-            );
-          })
-        ) : (
-          <p>データがありませんでした。</p>
-        )}
+            ))
+          ) : (
+            <p>データがありませんでした。</p>
+          )}
+        </div>
       </div>
       <Aside />
     </div>

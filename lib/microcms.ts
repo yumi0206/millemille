@@ -4,6 +4,7 @@ import type {
   MicroCMSQueries,
   MicroCMSDate,
   MicroCMSContentId,
+  MicroCMSImage,
 } from "microcms-js-sdk";
 import { createClient } from "microcms-js-sdk";
 import { notFound } from "next/navigation";
@@ -15,8 +16,8 @@ export const client = createClient({
 
 export async function fetchNewsArticles() {
   const response = await client.get({
-    endpoint: 'news',
-    queries: { limit:3, orders: '-publishedAt' },
+    endpoint: "news",
+    queries: { limit: 3, orders: "-publishedAt" },
   });
 
   return response.contents;
@@ -61,9 +62,9 @@ export type NewsType = {
   title: string;
   content: string;
   thumbnail: {
-    url:string;
+    url: string;
     height: number;
-    width:number;
+    width: number;
   };
   createdAt: string;
   updatedAt: string;
@@ -72,19 +73,15 @@ export type NewsType = {
   category?: Category;
 };
 
-export type ItemType = {
+export type ProductType = {
   id: string;
   title: string;
-  content: string;
-  image: {
-    url:string;
-    height: number;
-    width:number;
-  };
+  description: string;
+  price: number;
+  images: MicroCMSImage[];
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
   revisedAt: string;
   category?: Category;
-}
-
+};

@@ -7,7 +7,7 @@ const News = async () => {
   const news = await fetchLatestNews();
 
   return (
-    <div className="container mx-auto my-12 sm:leading-10 w-full sm:w-[calc(100%-5rem)] lg:w-[calc(100%-20rem)]">
+    <div className="my-12 sm:leading-10 w-full px-4 sm:px-0">
       <p className="py-2 text-xl font-semibold">News</p>
       {news != null ? (
         news.map((newsItem: NewsType) => {
@@ -15,7 +15,7 @@ const News = async () => {
             <Link key={newsItem.id} href={`/news/${newsItem.id}`}>
               <div
                 key={newsItem.id}
-                className="flex items-center hover:opacity-70 text-sm"
+                className="flex items-start hover:opacity-70 text-sm"
               >
                 <p className="mr-2">
                   {new Date(newsItem.updatedAt)
