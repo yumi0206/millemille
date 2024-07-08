@@ -2,8 +2,8 @@ import { ProductType, NewsType } from "@/lib/microcms";
 import { createClient } from "microcms-js-sdk";
 
 export const client = createClient({
-  serviceDomain: "red9m7kwt3",
-  apiKey: "oxxnEfx4XBHu1RCBKZSoAyWW3VvzwqBcE8qq",
+  serviceDomain: process.env.NEXT_PUBLIC_MICROCMS_SERVICE_DOMAIN || "",
+  apiKey: process.env.NEXT_PUBLIC_MICROCMS_API_KEY || "",
 });
 export const fetchAllProducts = async (): Promise<ProductType[]> => {
   try {

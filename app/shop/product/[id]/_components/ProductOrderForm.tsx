@@ -16,7 +16,6 @@ const ProductOrderForm: React.FC<ProductOrderFormProps> = ({ product }) => {
   const [quantity, setQuantity] = useState(1);
   const [pickupDate, setPickupDate] = useState<Date | null>(null);
   const [pickupTime, setPickupTime] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleQuantityChange = (change: number) => {
     setQuantity(Math.max(1, quantity + change));
@@ -26,11 +25,11 @@ const ProductOrderForm: React.FC<ProductOrderFormProps> = ({ product }) => {
     e.preventDefault();
 
     // LINEの公式アカウントID（@から始まるID）
-    const lineAccountId = "@145xdcub";
+    const lineAccountId = process.env.NEXT_PUBLIC_LINE_USER_ID;
 
     // 注文内容のメッセージを作成
     const message = encodeURIComponent(
-      `新しい注文\n` +
+      `新しい注文リクエストが届きました！🍰\n` +
         `商品: ${product.title}\n` +
         `数量: ${quantity}\n` +
         `受け取り日: ${pickupDate?.toLocaleDateString()}\n` +
