@@ -16,6 +16,7 @@ const ProductOrderForm: React.FC<ProductOrderFormProps> = ({ product }) => {
   const [quantity, setQuantity] = useState(1);
   const [pickupDate, setPickupDate] = useState<Date | null>(null);
   const [pickupTime, setPickupTime] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleQuantityChange = (change: number) => {
     setQuantity(Math.max(1, quantity + change));
@@ -23,12 +24,24 @@ const ProductOrderForm: React.FC<ProductOrderFormProps> = ({ product }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Order submitted", {
-      product,
-      quantity,
-      pickupDate,
-      pickupTime,
-    });
+
+    // LINEの公式アカウントID（@から始まるID）
+    const lineAccountId = "@145xdcub";
+
+    // 注文内容のメッセージを作成
+    const message = encodeURIComponent(
+      `新しい注文\n` +
+        `商品: ${product.title}\n` +
+        `数量: ${quantity}\n` +
+        `受け取り日: ${pickupDate?.toLocaleDateString()}\n` +
+        `受け取り時間: ${pickupTime}`
+    );
+
+    // LINE URL schemeを使用してURLを生成
+    const lineUrl = `https://line.me/R/oaMessage/${lineAccountId}/?${message}`;
+
+    // 新しいウィンドウでLINEのURLを開く
+    window.open(lineUrl, "_blank");
   };
 
   return (
