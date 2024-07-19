@@ -8,6 +8,8 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
+import { loadStripe } from "@stripe/stripe-js";
+
 interface ProductOrderFormProps {
   product: ProductType;
 }
@@ -43,9 +45,19 @@ const ProductOrderForm: React.FC<ProductOrderFormProps> = ({ product }) => {
     window.open(lineUrl, "_blank");
   };
 
+  const onPurchase = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const response = await fetch(
+      `/api/purchase/${product.stripeId}?quantity=${quantity}`
+    )
+    const data = await response.json()
+    const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_KEY!)
+    await stripe?.redirectToCheckout({ sessionId: data.id })
+  }
+
   return (
     <form
-      onSubmit={handleSubmit}
+      onSubmit={onPurchase}
       className="space-y-6 bg-white p-6 rounded-lg shadow-md"
     >
       <div>
@@ -60,6 +72,7 @@ const ProductOrderForm: React.FC<ProductOrderFormProps> = ({ product }) => {
           >
             -
           </button>
+
           <input
             type="number"
             value={quantity}

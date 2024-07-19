@@ -84,4 +84,5 @@ export type ProductType = {
   publishedAt: string;
   revisedAt: string;
   category?: Category;
+  stripeId?:string
 };

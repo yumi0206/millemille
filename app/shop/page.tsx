@@ -4,10 +4,20 @@ import { fetchAllProducts } from "../client";
 
 import AsideMenu from "./_components/AsideMenu";
 import ProductCard from "./_components/ProductCard";
+import initStripe from "stripe";
 
 const Shop: React.FC = async () => {
   const products = await fetchAllProducts();
   if (!products) return <div>No products available</div>;
+
+  const getAllItems = async () => {
+    const stripe = new initStripe(process.env.STRIPE_SECRET_KEY!);
+    const { data: items } = await stripe.products.list();
+    return { items };
+  };
+
+  const items = await getAllItems();
+  console.log(items);
 
   // カテゴリーごとに商品をグループ化
   let groupedproducts: Record<
