@@ -22,10 +22,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             />
           </div>
           <div className="p-4 flex flex-col justify-center products-center">
-            <h3 className="font-bold text-sm mb-2 truncate max-w-[90%] text-center">
+            <h3 className="text-sm mb-2 truncate max-w-[90%] text-center">
               {product.title}
             </h3>
-            <p className="text-gray-500 font-semibold text-sm">
+            <p className="text-gray-500 text-sm">
               ¥ {product.price.toLocaleString()}
             </p>
           </div>

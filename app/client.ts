@@ -12,8 +12,9 @@ export const fetchAllProducts = async (): Promise<ProductType[]> => {
       queries: { limit: 100 },
       customRequestInit: {
         // Using force-cache
-        cache: "force-cache",
+        cache: "no-cache",
         next: {
+          revalidate: 60,
           tags: ["products"], // Still including tags for on-demand revalidation
         },
       },

@@ -1,13 +1,13 @@
 import React from "react";
 import { ProductType } from "@/lib/microcms";
 import { fetchAllProducts } from "../client";
-
 import AsideMenu from "./_components/AsideMenu";
 import ProductCard from "./_components/ProductCard";
 import initStripe from "stripe";
 
 const Shop: React.FC = async () => {
   const products = await fetchAllProducts();
+  console.log(products);
   if (!products) return <div>No products available</div>;
 
   const getAllItems = async () => {
@@ -43,12 +43,12 @@ const Shop: React.FC = async () => {
 
   return (
     <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row ">
-      <AsideMenu categories={categories} />
+      <AsideMenu categories={categories}/>
       <main className="w-full md:w-4/5 md:pl-8">
         {Object.entries(groupedproducts).map(
           ([categoryId, { name, products }]) => (
             <section key={categoryId} id={categoryId} className="mb-12">
-              <h2 className="text-2xl font-semibold mb-6">{name}</h2>
+              <h2 className="text-xl font-semibold mb-6">{name}</h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
                 {products.map((product: ProductType) => (
                   <ProductCard key={product.id} product={product} />

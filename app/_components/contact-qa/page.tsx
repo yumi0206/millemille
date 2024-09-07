@@ -14,21 +14,19 @@ const ContactQA = () => {
             Q. ホールケーキの予約はできますか？
           </AccordionTrigger>
           <AccordionContent>
-            Yes. It adheres to the WAI-ARIA design pattern.
+            A.店頭、電話、メールにて予約を賜っております。
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
           <AccordionTrigger>Q. 定休日はいつですか？</AccordionTrigger>
           <AccordionContent>
-            Yes. It comes with default styles that matches the other
-            components&apos; aesthetic.
+          A.毎週月・火が定休日です。<br/>その他夏季休業・冬季休業・臨時休業をする場合がございます。
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
           <AccordionTrigger>Q. 駐車場はありますか？</AccordionTrigger>
           <AccordionContent>
-            Yes. It&apos;s animated by default, but you can disable it if you
-            prefer.
+            A.当店正面とお向かいに駐車場をご用意しております。
           </AccordionContent>
         </AccordionItem>
       </Accordion>

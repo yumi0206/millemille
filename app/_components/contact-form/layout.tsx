@@ -2,7 +2,7 @@ import Hero from "@/app/_components/Hero";
 
 
 export const metadata = {
-  title: "Access",
+  title: "Contact",
 };
 
 type Props = {

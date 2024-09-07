@@ -1,4 +1,5 @@
 "use client";
+import { Button } from "@/components/ui/button";
 import { useState, FormEvent } from "react";
 
 interface FormData {
@@ -80,12 +81,9 @@ const ContactForm = () => {
           className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-soft "
         ></textarea>
       </div>
-      <button
-        type="submit"
-        className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-soft hover:bg-soft/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-soft"
-      >
-        送信
-      </button>
+      <div className="flex justify-center">
+        <Button className="w-fit px-20 mb-6" type="submit">送信</Button>
+      </div>
     </form>
   );
 };

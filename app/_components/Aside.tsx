@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Aside: React.FC = () => {
   return (
-    <aside className="w-full md:w-1/5 order-2 md:order-none mt-8 md:mt-0 md:pl-6">
+    <aside className="w-full md:w-1/5 md:sticky md:top-20 md:h-screen overflow-auto">
       <div className="p-4 w-full">
         <h3 className="font-bold mb-2">Category</h3>
         <ul className="mt-2">

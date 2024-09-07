@@ -8,7 +8,7 @@ type ArticleCardProps = {
 
 const ArticleCard = ({ news }: ArticleCardProps) => {
   return (
-    <div className="bg-white p-4 px-8 sm:px-6 mx-2 md:mx-0 shadow-custom-6 rounded-lg h-[500px] flex flex-col ">
+    <div className="bg-white p-4 px-8 sm:px-6 mx-2 md:mx-0 shadow-custom-6 h-[500px] flex flex-col ">
       <article className="flex flex-col h-full">
         <Link href={`/news/${news.id}`} className="flex flex-col h-full">
           <div className="relative h-60  mb-4 flex-shrink-0">

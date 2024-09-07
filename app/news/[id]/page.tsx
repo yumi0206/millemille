@@ -1,7 +1,6 @@
 import React from "react";
 import { fetchNews } from "@/app/client";
 
-import DOMPurify from "dompurify";
 import parse from "html-react-parser";
 import Loading from "@/app/_components/Loading";
 import Image from "next/image";

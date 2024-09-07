@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-
 import "./globals.css";
-import { marcellusRegular, zenOldMincho } from "@/lib/font";
+import { zenOldMincho } from "@/lib/font";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 
@@ -19,14 +18,10 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="ja"
-      suppressHydrationWarning
-      className={[marcellusRegular.className, zenOldMincho.className].join(" ")}
-    >
-      <body className="">
+    <html lang="ja" suppressHydrationWarning>
+      <body className={zenOldMincho.className}>
         <Header />
-        <main className="">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

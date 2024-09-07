@@ -36,7 +36,7 @@ export default async function ProductPage({
   return (
     <>
       <BreadcrumbWithCustomSeparator name={product.title} />
-      <div className="container mx-auto px-4 py-8 max-w-[1000px]">
+      <div className="container mx-auto px-4 py-8  max-w-[1000px] 2xl:max-w-[1200px] ">
         <div className="flex flex-col md:flex-row md:space-x-8">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <ProductImages images={product.images} title={product.title} />
