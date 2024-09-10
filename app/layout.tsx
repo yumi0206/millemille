@@ -9,13 +9,15 @@ const siteUrl =
 
 export const metadata: Metadata = {
   title: "Patisserie mille.mille",
-  description: "釧路パティスリーミルミル",
+  description:
+    "北海道釧路市にあるシフォンケーキが有名なケーキ屋、パティスリーミルミルです。",
   robots: {
     index: false,
   },
   openGraph: {
     title: "Patisserie mille.mille",
-    description: "釧路パティスリーミルミル",
+    description:
+      "北海道釧路市にあるシフォンケーキが有名なケーキ屋、パティスリーミルミルです。",
     url: siteUrl,
     siteName: "Patisserie mille.mille",
     images: [
@@ -32,7 +34,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Patisserie mille.mille",
-    description: "釧路パティスリーミルミル",
+    description:
+      "北海道釧路市にあるシフォンケーキが有名なケーキ屋、パティスリーミルミルです。",
     images: [`${siteUrl}/OGP.png`],
   },
 };
