@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🍰 Patisserie millemille - 街のケーキ屋さん EC サイト
 
-## Getting Started
+## 📝 プロジェクト概要
 
-First, run the development server:
+Patisserie millemille は、地域密着型ケーキ屋さんのオンライン注文・決済システムです。最新のウェブ技術を活用し、使いやすさと管理のしやすさを両立した EC サイトを目指しています。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠 使用技術
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Next.js 14](https://nextjs.org/) - React ベースのフルスタックフレームワーク
+- [App Router](https://nextjs.org/docs/app) - 最新の Next.js ルーティングシステム
+- [TailwindCSS](https://tailwindcss.com/) - ユーティリティファースト CSS フレームワーク
+- [Shadcn/ui](https://ui.shadcn.com/) - 再利用可能な UI コンポーネント
+- [Firebase](https://firebase.google.com/) - ユーザー認証、データベース
+- [MicroCMS](https://microcms.io/) - ヘッドレス CMS
+- [Stripe](https://stripe.com/) - オンライン決済システム
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![Patisserie millemille アーキテクチャ](/architecture.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🌟 主な機能
 
-## Learn More
+1. **商品閲覧・注文**: ユーザーは豊富なケーキのラインナップから商品を選び、カートに追加できます。
 
-To learn more about Next.js, take a look at the following resources:
+2. **オンライン決済**: Stripe を利用した安全で簡単な決済プロセスを実装しています。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **ユーザー認証**: Firebase を使用し、セキュアなユーザー登録・ログイン機能を提供しています。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. **管理者ダッシュボード**:
 
-## Deploy on Vercel
+   - 商品管理: MicroCMS を通じて、非エンジニアでも簡単に商品の追加・編集が可能です。
+   - お知らせ管理: イベントや新商品情報などを容易に更新できます。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. **レスポンシブデザイン**: スマートフォンからデスクトップまで、様々なデバイスに対応しています。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 💡 こだわりポイント
+
+- **パフォーマンス最適化**: Next.js 14 の機能を活用し、高速な読み込みと滑らかなユーザー体験を実現しています。
+- **SEO 対策**: 適切なメタタグの設定やサイトマップの生成により、検索エンジン最適化を行っています。
+- **アクセシビリティ**: Web アクセシビリティガイドラインに沿って、誰もが使いやすいインターフェースを目指しました。
+- **セキュリティ**: Firebase と Stripe の採用により、ユーザー情報と決済データの安全性を確保しています。
+
+## 🚀 今後の展望
+
+- 注文履歴機能の追加
+- お気に入り商品リストの実装
+- AI を活用したケーキのカスタマイズ提案機能
+
+---
+
+🍰 Patisserie millemille - おいしいケーキと幸せな時間をお届けします 🍰
