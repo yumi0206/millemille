@@ -14,7 +14,8 @@ Patisserie millemille は、地域密着型ケーキ屋さんのオンライン�
 - [MicroCMS](https://microcms.io/) - ヘッドレス CMS
 - [Stripe](https://stripe.com/) - オンライン決済システム
 
-![Patisserie millemille アーキテクチャ](/architecture.png)
+![architecture](https://github.com/user-attachments/assets/abb361af-705f-4f99-aaf9-676d1742c472)
+
 
 ## 🌟 主な機能
 
