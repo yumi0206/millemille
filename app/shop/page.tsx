@@ -11,6 +11,7 @@ const Shop: React.FC = async () => {
   if (!products) return <div>No products available</div>;
 
   const getAllItems = async () => {
+    
     const stripe = new initStripe(process.env.STRIPE_SECRET_KEY!);
     const { data: items } = await stripe.products.list();
     return { items };
